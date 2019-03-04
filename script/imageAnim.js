@@ -76,6 +76,7 @@
 		// change the current puzzle, regnerate the pieces
 		// debugger;
 		piecesBoard.innerHTML = ""
+		dropZones.forEach(zone => { zone.innerHTML = ""});
 		createPuzzlePieces(this.dataset.puzzleref);
 	}
 
