@@ -65,7 +65,9 @@
 			if(zone.innerHTML == ""){
 
 			e.target.appendChild(document.querySelector(`#${piece}`));
-			} 
+			} else {
+				alert('Only one Puzzle Piece per Zone');
+			}
 
 		});
 	});
