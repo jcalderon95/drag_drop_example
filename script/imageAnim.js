@@ -61,7 +61,12 @@
 			console.log('you dropped something on me');
 
 			let piece = e.dataTransfer.getData("text/plain");
+
+			if(zone.innerHTML == ""){
+
 			e.target.appendChild(document.querySelector(`#${piece}`));
+			} 
+
 		});
 	});
 
